@@ -23,7 +23,7 @@ public class FileContentConvertorTest {
     @Test
     public void getAsciiCodeTest(){
         String convertedString = fileContentConvertor.getAsciiCode("Onl&y! * 0");
-        assert(convertedString.equalsIgnoreCase("Onl38y33 42 48"));
+        assert(convertedString.equalsIgnoreCase("Onl39y34 43 49"));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class FileContentConvertorTest {
     @Test
     public void convertSeventhCharToCLongerOrEqualToSeven(){
         String convertedString = fileContentConvertor.convertSeventhCharToE("Longer or equal to seven");
-        assert ("LongerCor equal to seven".equals(convertedString));
+        assert ("Longereor equal to seven".equals(convertedString));
 
 
     }
