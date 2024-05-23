@@ -1,6 +1,5 @@
 package com.fruugo.service;
 
-import com.fruugo.data.FileContentIO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

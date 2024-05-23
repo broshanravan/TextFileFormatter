@@ -1,7 +1,9 @@
 package com.fruugo.inputProcessors;
 
 import com.fruugo.data.FileContentIO;
+import com.fruugo.data.FileContentIOImpl;
 import com.fruugo.enums.ConversionType;
+import com.fruugo.service.FileContentConvertor;
 import com.fruugo.service.FileContentConvertorImpl;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,8 +29,8 @@ public class UserInputProcessorImpl implements UserInputProcessor {
 
     private static Logger logger = LogManager.getLogger(FileContentConvertorImpl.class);
     String fileNameTale ="";
-    FileContentConvertorImpl fileContentConvertor= new FileContentConvertorImpl();
-    FileContentIO fileContentIO = new FileContentIO();
+    FileContentConvertor fileContentConvertor= new FileContentConvertorImpl();
+    FileContentIO fileContentIOImpl = new FileContentIOImpl();
 
     /**
      * constructing the dynamic
@@ -104,7 +106,7 @@ public class UserInputProcessorImpl implements UserInputProcessor {
      */
     public void saveFinalString(String inputFileName, String convertedFinalContent){
         String filename = "output" + fileNameTale + ".txt";
-        fileContentIO.creatOutputFile(filename,convertedFinalContent);
+        fileContentIOImpl.creatOutputFile(filename,convertedFinalContent);
         fileNameTale = "";
     }
 
@@ -190,7 +192,7 @@ public class UserInputProcessorImpl implements UserInputProcessor {
             inputFile = new File(filenamePath);
         }
 
-        return fileContentIO.readInputFileContents(filenamePath);
+        return fileContentIOImpl.readInputFileContents(filenamePath);
 
 
     }
