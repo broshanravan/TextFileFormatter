@@ -3,24 +3,27 @@ Upon starting the application, the user will be presented with the following opt
 1- To quit the app type 'stop' and  press 'Enter' button.
 2- To start running the app press the user needs 'Enter' and they will be prompted by a message to insert the file full name and press 'Enter' to start the formatting process
 
-The file path would be fixed to the folder 'input' at the root of the project. The user only needs to enter the file name with its type extension (for example input1.txt) 
+The file path would be fixed to the folder 'input' at the root of the project. 
+The user only needs to enter the file name with its type extension (for example 'input1.txt') 
 The relative path within the project and in the folder ‘input’.
 
-In case the file exists, the system will then ask for the type of change to be made to the file contents.
+In case the file exists, the system will then start the formatting process by asking for the type of change to be made to the file contents.
 Otherwise, the user will get an error prompt to inform them that the file name is not valid.
 
 Please note that the application looks for input files only inside the 'input' directory at the root of the project.
-The following flags need to be entered for the application to perform the right functionality.
+After the file is located the system asks for the type of format that needs to be applied to the text inside the file.
+One of the following flags needs to be entered for the application to perform the right functionality.
 
 'SEV' Converts all the '7' characters to 'e'.
 'REV' Reverses all strings.
 'TRM' Removes all white spaces.
 'ASC' If the ASCII code of the character is between 32 and 63 inclusive, convert the character to its ASCII value plus one.
 
-Just type the flags specified above in the console and press Enter.
+Just type one of the above flags specified in the console and press 'Enter'.
 
 To complete the task and produce that final result file run the command 'COMP'
-and then the application will create the final output file inside the folder ‘output’
+
+The application will then create the final output file inside the folder ‘output’
 The application can be run from any IDE.
 just import it as a Maven project
 
