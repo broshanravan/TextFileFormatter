@@ -22,8 +22,8 @@ public class FileContentConvertorTest {
 
     @Test
     public void getAsciiCodeTest(){
-        String convertedString = fileContentConvertor.getAsciiCode("Onl&y! * 0");
-        assert(convertedString.equalsIgnoreCase("Onl39y34 43 49"));
+        String convertedString = fileContentConvertor.getAsciiCode("Onl&y!*0");
+        assert(convertedString.equalsIgnoreCase("Onl39y344349"));
     }
 
     @Test
@@ -49,6 +49,12 @@ public class FileContentConvertorTest {
     public void convertAllSevenCharactersToETest() {
         String convertedString = fileContentConvertor.convertAllSevenCharactersToE("All charact7rs of valu7 s7v7n");
         assert ("All characters of value seven".equals(convertedString));
+    }
+
+    @Test
+    public void convertAllSevenCharactersToENoDevenTest() {
+        String convertedString = fileContentConvertor.convertAllSevenCharactersToE("123456 All characters of value seven890");
+        assert ("123456 All characters of value seven890".equals(convertedString));
     }
 
 
