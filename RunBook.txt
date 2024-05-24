@@ -24,10 +24,9 @@ Just type one of the above flags specified in the console and press 'Enter'.
 To complete the task and produce that final result file run the command 'COMP'
 
 The application will then create the final output file inside the folder ‘output’
-The application can be run from any IDE.
-just import it as a Maven project
+This application can be run from any IDE. just import it as a Maven project
 
-There is also an executable ‘Jar file’ and a ‘.bat’ file to run the application independently.
+There is also an executable 'Jar'(TetFileFormatter.jar) file’ and a '.bat' (formater.bar) file to run the application independently.
 Just copy the .bat and executable file to a folder of your choice.
 Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it the same directory as the application will be looking for the subfolders in the same directory.
 The final file name will be assembled according to the types and number of formats that were applied to the contents of the original input file.
