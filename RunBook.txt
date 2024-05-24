@@ -10,7 +10,7 @@ The relative path within the project and in the folder ‘input’.
 In case the file exists, the system will then start the formatting process by asking for the type of change to be made to the file contents.
 Otherwise, the user will get an error prompt to inform them that the file name is not valid.
 
-Please note that the application looks for input files only inside the 'input' directory at the root of the project.
+Please note that the application looks for input files only inside the 'input' and  write the resulted file into the ' output' directory at the root of the project.
 After the file is located the system asks for the type of format that needs to be applied to the text inside the file.
 One of the following flags needs to be entered for the application to perform the right functionality.
 
@@ -27,10 +27,12 @@ The application will then create the final output file inside the folder ‘outp
 This application can be run from any IDE. just import it as a Maven project
 
 There is also an executable 'Jar'(TetFileFormatter.jar) file’ and a '.bat' (formater.bar) file to run the application independently.
-Just copy the .bat and executable file to a folder of your choice.
-Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it the same directory as the application will be looking for the subfolders in the same directory.
+Just copy the .bat and executable jar file to a folder of your choice.
+Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it into the same directory where the.jar and the .bat files are in, as the application will be looking for these subfolders in the same directory as it resides.
 The final file name will be assembled according to the types and number of formats that were applied to the contents of the original input file.
 
-At the end of each process of producing a new file, the application will again provide the user with the option to continue.
+The same principle applies when rnning the application from an IDE, as the two folders have not been committed to git
+
+At the end of each process of producing a new file, the application will again provide the user with the same option to continue by pressing 'Enter Button or termination the application bt typing the word 'stop' and pressing 'Enter' button.
 
 Please note that in order to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushing to Git'
