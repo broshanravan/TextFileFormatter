@@ -34,7 +34,9 @@ public class FileContentConvertorImpl  implements FileContentConvertor{
      * @return
      */
     public String removeWhiteSpaces(String fileContentLine) {
-        return fileContentLine.replaceAll("\\s", "");
+        fileContentLine = fileContentLine.replaceAll("\\s", "");
+        return fileContentLine;
+
     }
 
     /**

@@ -63,13 +63,11 @@ public class UserInputProcessorImpl implements UserInputProcessor {
      * @param conversionType
      * @return
      */
-    public String getConvertedContent(String fileContents, ConversionType conversionType){
-
-
+    public String getConvertedContent(String fileContents, ConversionType conversionType) {
         BufferedReader fileContentsBufferReader = new BufferedReader(new StringReader(fileContents));
         String convertedContents = "";
 
-        try{
+        try {
             String line = "";
 
             while ((line = fileContentsBufferReader.readLine()) != null) {
@@ -83,21 +81,26 @@ public class UserInputProcessorImpl implements UserInputProcessor {
                     line = fileContentConvertor.getAsciiCode(line);
                 }
 
-                convertedContents += line;
-                convertedContents += "\n";
+                if (line.trim().length() == 0) {
+                    if (!conversionType.equals(ConversionType.TRM)) {
+                        convertedContents += line;
+                        convertedContents += "\n";
+                    }
 
-
-
+                } else {
+                    convertedContents += line;
+                    convertedContents += "\n";
+                }
             }
-            //constructFleNameTale(conversionType);
+
         } catch (IOException ioe){
             logger.error(ioe.getMessage());
+
         }
+
         return convertedContents;
-
-
-
     }
+
 
 
     /**
@@ -145,17 +148,20 @@ public class UserInputProcessorImpl implements UserInputProcessor {
         try {
             ConversionType conversionType = ConversionType.valueOf(conversionTypeValueInput);
             constructFleNameTale(conversionType);
-            collectUserEntry(conversionType,   sequence,  fileContent);
+            fileContent = collectUserEntry(conversionType,   sequence,  fileContent);
         } catch (IllegalArgumentException iao) {
             System.out.println("Not a valid Type, try Again");
             conversionTypeValueInput = scanner.nextLine();
             ConversionType conversionType = ConversionType.valueOf(conversionTypeValueInput);
-            collectUserEntry( conversionType,   sequence,  fileContent);
+            fileContent = collectUserEntry( conversionType,   sequence,  fileContent);
             constructFleNameTale(conversionType);
 
         }
         saveFinalString(fileName, fileContent);
-        System.out.print(fileContent);
+        System.out.println("***********************************");
+        System.out.println("final file contents are:");
+        System.out.println(fileContent);
+        System.out.println("***********************************");
 
     }
 
@@ -169,7 +175,7 @@ public class UserInputProcessorImpl implements UserInputProcessor {
      * @param fileContent
      * @throws IllegalArgumentException
      */
-    private void collectUserEntry(ConversionType conversionType, int  sequence, String fileContent) throws IllegalArgumentException {
+    private String collectUserEntry(ConversionType conversionType, int  sequence, String fileContent) throws IllegalArgumentException {
         Scanner scanner = new Scanner(System.in);
         while(!conversionType.equals(ConversionType.COMP) && sequence < 20) {
             System.out.println("Please enter the next conversion Type ('REV'.'SEV','TRM','ASC','COMP')");
@@ -180,6 +186,7 @@ public class UserInputProcessorImpl implements UserInputProcessor {
             sequence ++;
 
         }
+        return fileContent;
     }
 
     private String getFileContent(String fileName){
