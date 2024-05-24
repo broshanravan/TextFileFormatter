@@ -1,6 +1,8 @@
 Upon starting the application, the user will be presented with the following options.
-1-quit the app by typing ‘stop’ and Enter
+
+1- To quit the app type ‘stop’ and Enter
 2- To start  press Enter and start inputting the full file detail and start the process
+
 The file path would be the relative path within the project and in the folder ‘input’.
 
 In case the file exists, the system will then ask for the type of change to be made to the file contents.
@@ -24,8 +26,8 @@ just import it as a Maven project
 There is also an executable ‘Jar file’ and a ‘.bat’ file to run the application independently.
 Just copy the .bat and executable file to a folder of your choice.
 Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it the same directory as the application will be looking for the subfolders in the same directory.
-The final file name will be assembled according to the types and number of formats that was applied to the contents of the original input file.
+The final file name will be assembled according to the types and number of formats that were applied to the contents of the original input file.
 
 At the end of each process of producing a new file, the application will again provide the user with the option to continue.
 
-Please note that in order to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushes to Git'
+Please note that in order to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushing to Git'
