@@ -1,18 +1,19 @@
-Upon starting the application, the user will be presented with the following options.
+Upon starting the application the user will be presented with the following options.
 
-1- To quit the application type 'stop' and  press the 'Enter' button.
-2- To start running the application press the 'Enter' button and you will be prompted by a message to insert the file name. 
-Insert the file name and press 'Enter' button to start the formatting process
+  1- To quit the application type 'stop' and  press the 'Enter' button.
+  2- To start running the application just press the 'Enter' button and they will be prompted by a message to insert the file name. 
 
-Note: The file path would be fixed to the folder 'input' at the root of the project. Hence the user only needs to enter the file name with its type extension (for example 'input1.txt'). 
+Insert the file name and press the 'Enter' button to start  the formatting process.
 
+Note: The file path would be fixed to the folder 'input' at the project's root. Hence the user only needs to enter the file name with its type extension (for example 'input1.txt'). 
 
-In case the file exists, the application will then start the formatting process by asking for the type of change to be made to the file contents.
+In case the file exists, the application will then start the formatting process by asking the user for the type of change to be made to the file contents.
+The user will then enters one of the following valid types
 
-'SEV' Converts all the '7' characters to 'e'.
-'REV' Reverses all strings.
-'TRM' Removes all white spaces.
-'ASC' If the ASCII code of the character is between 32 and 63 inclusive, convert the character to its ASCII value plus one.
+  'SEV' Converts all the '7th' characters on each line to 'e'.
+  'REV' Reverses all strings.
+  'TRM' Removes all white spaces.
+  'ASC' If the ASCII code of the character is between 32 and 63 inclusive, convert the character to its ASCII value plus one.
 
 Otherwise, the user will get an error prompt to inform them that the file name is not valid.
 
@@ -37,8 +38,8 @@ The final file name will be assembled according to the types and number of forma
 The same principle applies when running the application from an IDE, as the two folders have not been committed to git
 
 At the end of each process upon producing a new file, the application will then provide the user with the same option as the start of the application to:
-  1- Continue by pressing the 'Enter' Button 
-   
+
+  1- Continue by pressing the 'Enter' Button    
   2-Terminate the application by inserting the word 'stop' and then pressing the 'Enter' button.
 
 Please note that to run the project in an IDE the two folders 'input' and 'output' need to be added to the root as they have not been pushed to the 'Git' repository
