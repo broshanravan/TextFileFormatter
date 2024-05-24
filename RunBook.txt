@@ -1,0 +1,29 @@
+Upon starting the application, the user will be presented with the following options.
+1-quit the app by typing ‘stop’ and Enter
+2-Enter the full file detail and start the process
+The file path would be the relative path within the project and in the folder ‘input’.
+
+In case the file exists, the system will then ask for the type of change to be made to the file contents.
+Otherwise, the user will get an error prompt to inform them that the file name is not valid.
+
+Please note that the application looks for input files only inside the 'input' directory at the root of the project.
+The following flags need to be entered for the application to perform the right functionality.
+
+'SEV' Converts all the '7' characters to 'e'.
+'REV' Reverses all strings.
+'TRM' Removes all white spaces.
+'ASC' If the ASCII code of the character is between 32 and 63 inclusive, convert the character to its ASCII value plus one.
+
+Just type the flags specified above in console and press Enter.
+
+To complete the task and produce that final result file run the command 'COMP'
+and then the application will create the final output file inside the folder ‘output’
+The application can be run from any IDE.
+just import it as a maven project
+
+There is also an executable ‘Jar file’ and a ‘.bat’ file to run the application independently.
+Just copy the .bat and executable file to a folder of you choose.
+Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it the same directory as the application will be looking for the subfolders in the same directory.
+The final file name will be assembled according to the types and number of formats that was applied to the contents of the original input file.
+
+At the end of each process of producing a new file, the application will again provide the user with the option to continue.
