@@ -76,6 +76,19 @@ public class FileContentConvertorImpl  implements FileContentConvertor{
     }
 
     /**
+     * converts character of value '7'
+     * line(if it exists) to the character:
+     * 'e'
+     * @param fileContentLine
+     * @return
+     */
+    public String convertAllSevenCharactersToE(String fileContentLine) {
+        fileContentLine = fileContentLine.replace('7','e');
+        return fileContentLine;
+    }
+
+
+    /**
      * Converts a character into its
      * ASCII Code
      * @param character

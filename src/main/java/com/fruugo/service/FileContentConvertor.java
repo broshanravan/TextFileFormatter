@@ -8,5 +8,6 @@ public interface FileContentConvertor {
     public String removeWhiteSpaces(String fileContents);
     public String getAsciiCode(String fileContent);
     public String convertSeventhCharToE(String fileContents);
+    public String convertAllSevenCharactersToE(String fileContentLine);
 
 }

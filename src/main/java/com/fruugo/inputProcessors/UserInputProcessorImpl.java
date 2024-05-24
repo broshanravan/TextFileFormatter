@@ -72,7 +72,7 @@ public class UserInputProcessorImpl implements UserInputProcessor {
 
             while ((line = fileContentsBufferReader.readLine()) != null) {
                 if (conversionType.equals(ConversionType.SEV)) {
-                    line = fileContentConvertor.convertSeventhCharToE(line);
+                    line = fileContentConvertor.convertAllSevenCharactersToE(line);
                 } else if (conversionType.equals(ConversionType.REV)) {
                     line = fileContentConvertor.reverseContents(line);
                 } else if (conversionType.equals(ConversionType.TRM)) {

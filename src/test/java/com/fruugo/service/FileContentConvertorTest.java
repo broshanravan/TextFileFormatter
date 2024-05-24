@@ -27,16 +27,22 @@ public class FileContentConvertorTest {
     }
 
     @Test
-    public void convertSeventhCharToCShorterThanSeven(){
+    public void convertSeventhCharToCShorterThanSevenTest(){
         String convertedString = fileContentConvertor.convertSeventhCharToE("Only 6");
         assert ("Only 6".equals(convertedString));
 
     }
     @Test
-    public void convertSeventhCharToCLongerOrEqualToSeven(){
+    public void convertSeventhCharToCLongerOrEqualToSevenTest(){
         String convertedString = fileContentConvertor.convertSeventhCharToE("Longer or equal to seven");
         assert ("Longereor equal to seven".equals(convertedString));
-
-
     }
+
+    @Test
+    public void convertAllSevenCharactersToETest() {
+        String convertedString = fileContentConvertor.convertAllSevenCharactersToE("All charact7rs of valu7 s7v7n");
+        assert ("All characters of value seven".equals(convertedString));
+    }
+
+
 }
