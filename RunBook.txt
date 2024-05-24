@@ -19,7 +19,7 @@ Otherwise, the user will get an error prompt to inform them that the file name i
 Please note that the application looks for input files only inside the 'input' and  write the resulted file into the ' output' directory at the root of the project.
 
 After the file is located the system asks for the type of format that needs to be applied to the text inside the file.
-One of the following flags needs to be entered for the application to perform the right functionality.
+One of the above flags needs to be entered for the application to perform the right functionality.
 
 
 
