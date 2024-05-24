@@ -41,4 +41,4 @@ At the end of each process upon producing a new file, the application will then 
    
   2-Terminate the application by inserting the word 'stop' and then pressing the 'Enter' button.
 
-Please note that to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushing to Git'
+Please note that to run the project in an IDE the two folders 'input' and 'output' need to be added to root as they have not been pushed to the 'Git' repository
