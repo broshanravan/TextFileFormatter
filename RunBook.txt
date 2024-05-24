@@ -19,24 +19,26 @@ Otherwise, the user will get an error prompt to inform them that the file name i
 Please note that the application looks for input files only inside the 'input' and  write the resulted file into the ' output' directory at the root of the project.
 
 After the file is located the system asks for the type of format that needs to be applied to the text inside the file.
-One of the above flags needs to be entered for the application to perform the right functionality.
+One of the above flags needs to be entered for the application to start performing the right functionality.
 
+Just type one of the above flags( SEV, REV, TRM, ASC) specified in the console and press 'Enter'.
 
+To complete the task and produce that final result file insert the command 'COMP' and press Enter
 
-Just type one of the above flags specified in the console and press 'Enter'.
-
-To complete the task and produce that final result file run the command 'COMP'
-
-The application will then create the final output file inside the folder ‘output’
+The application will then create the final output file inside the folder 'output'
 This application can be run from any IDE. just import it as a Maven project
 
-There is also an executable 'Jar'(TetFileFormatter.jar) file’ and a '.bat' (formater.bar) file to run the application independently.
+There is also an executable 'Jar'(TetFileFormatter.jar) file and a '.bat' (formater.bat) file in the root of this project to enable the user to run the application independently.
 Just copy the .bat and executable jar file to a folder of your choice.
-Note: You also need to copy the ‘input’ folder with its resource files and the ‘output’ folder it into the same directory where the.jar and the .bat files are in, as the application will be looking for these subfolders in the same directory as it resides.
+
+Note: You also need to copy the ‘input’ folder with its contents and the 'Output' folder into the same directory where the .jar and the .bat files reside, as the application will look for these subfolders in its own directory.
 The final file name will be assembled according to the types and number of formats that were applied to the contents of the original input file.
 
-The same principle applies when rnning the application from an IDE, as the two folders have not been committed to git
+The same principle applies when running the application from an IDE, as the two folders have not been committed to git
 
-At the end of each process of producing a new file, the application will again provide the user with the same option to continue by pressing 'Enter Button or termination the application bt typing the word 'stop' and pressing 'Enter' button.
+At the end of each process upon producing a new file, the application will then provide the user with the same option as the start of the application to:
+  1- Continue by pressing the 'Enter' Button 
+   
+  2-Terminate the application by inserting the word 'stop' and then pressing the 'Enter' button.
 
-Please note that in order to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushing to Git'
+Please note that to run the project in IDE the two folders 'input' and 'output' need to be added to roor as they have not been pushing to Git'
