@@ -27,3 +27,5 @@ Note: You also need to copy the ‘input’ folder with its resource files and t
 The final file name will be assembled according to the types and number of formats that was applied to the contents of the original input file.
 
 At the end of each process of producing a new file, the application will again provide the user with the option to continue.
+
+Please tote that in order to run the project in IDE the two folders 'input' and 'output' needs to be added to roor as they have not been pushes to Git'
