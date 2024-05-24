@@ -1,11 +1,11 @@
 Upon starting the application, the user will be presented with the following options.
 
-1- To quit the app type 'stop' and  press 'Enter' button.
-2- To start running the app press the user needs 'Enter' and they will be prompted by a message to insert the file full name and press 'Enter' to start the formatting process
+1- To quit the application type 'stop' and  press the 'Enter' button.
+2- To start running the application press the 'Enter' button and you will be prompted by a message to insert the file name. 
+Insert the file name and press 'Enter' button to start the formatting process
 
-The file path would be fixed to the folder 'input' at the root of the project. 
-The user only needs to enter the file name with its type extension (for example 'input1.txt') 
-The relative path within the project and in the folder ‘input’.
+Note: The file path would be fixed to the folder 'input' at the root of the project. Hence the user only needs to enter the file name with its type extension (for example 'input1.txt'). 
+
 
 In case the file exists, the system will then start the formatting process by asking for the type of change to be made to the file contents.
 Otherwise, the user will get an error prompt to inform them that the file name is not valid.
