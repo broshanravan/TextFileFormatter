@@ -51,7 +51,7 @@ public class FileContentConvertorImpl  implements FileContentConvertor{
         AtomicReference<String> asciiConvertedTxt = new AtomicReference<>("");
         charactersStream.map(c -> {
             int asci = getAscii(c) ;
-            if (asci >= 32 && asci <= 63) {
+            if (asci >= 32 && asci <= 64) {
                 return asci + 1;
             } else {
                 return c;

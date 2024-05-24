@@ -27,6 +27,13 @@ public class FileContentConvertorTest {
     }
 
     @Test
+    public void getAsciiCodeTestBorder(){
+        String convertedString = fileContentConvertor.getAsciiCode("@Onl&y! * 0");
+        assert(convertedString.equalsIgnoreCase("65Onl39y3433433349"));
+    }
+
+
+    @Test
     public void convertSeventhCharToCShorterThanSevenTest(){
         String convertedString = fileContentConvertor.convertSeventhCharToE("Only 6");
         assert ("Only 6".equals(convertedString));
