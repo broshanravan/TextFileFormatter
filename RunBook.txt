@@ -3,7 +3,7 @@ Upon starting the application, the user will be presented with the following opt
 1- To quit the app type ‘stop’ and Enter
 2- To start just press Enter and you will be prompted to start by inputting the full file detail and start the process
 
-The file path would is fixed to the folder input and the user only needs to enter the file name with its type extension (for example: input1.txt) 
+The file path would is fixed to the folder 'input' in the root of the project. The user only needs to enter the file name with its type extension (for example input1.txt) 
 The relative path within the project and in the folder ‘input’.
 
 In case the file exists, the system will then ask for the type of change to be made to the file contents.
