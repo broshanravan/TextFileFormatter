@@ -1,31 +1,23 @@
 Upon starting the application the user will be presented with the following options.
 
   1- To quit the application type 'stop' and  press the 'Enter' button.
-<<<<<<< HEAD
   2- To start running the application just press the 'Enter' button and they will be prompted by a message to insert the file name.
 
 Insert the file name and press the 'Enter' button to start  the formatting process.
 
-Note: The file path would be fixed to the folder 'input' at the project's root. Hence the user only needs to enter the file name with its type extension (for example 'input1.txt').
-=======
-  2- To start running the application just press the 'Enter' button and they will be prompted by a message to insert the file name. 
-
-Insert the file name and press the 'Enter' button to start  the formatting process.
-
 Note: The file path would be fixed to the folder 'input' at the project's root. Hence the user only needs to enter the file name with its type extension (for example 'input1.txt'). 
->>>>>>> origin/master
 
 In case the file exists, the application will then start the formatting process by asking the user for the type of change to be made to the file contents.
 The user will then enters one of the following valid types
 
-  'SEV' Converts all the '7th' characters on each line to 'e'.
+  'SEV' Converts all the '7' characters on each line to 'e'.
   'REV' Reverses all strings.
   'TRM' Removes all white spaces.
-  'ASC' If the ASCII code of the character is between 32 and 63 inclusive, convert the character to its ASCII value plus one.
+  'ASC' If the ASCII code of the character is between 32 and 64 inclusive, convert the character to its ASCII value plus one.
 
 Otherwise, the user will get an error prompt to inform them that the file name is not valid.
 
-Please note that the application looks for input files only inside the 'input' and  write the resulted file into the ' output' directory at the root of the project.
+Please note that the application looks for input files only inside the 'input' folder and  write the resulted file into the ' output' directory at the root of the project.
 
 After the file is located the system asks for the type of format that needs to be applied to the text inside the file.
 One of the above flags needs to be entered for the application to start performing the right functionality.
@@ -40,19 +32,17 @@ This application can be run from any IDE. just import it as a Maven project
 There is also an executable 'Jar'(TetFileFormatter.jar) file and a '.bat' (formater.bat) file at the root of this project to enable the user to run the application independently.
 Just copy the .bat and executable jar file to a folder of your choice.
 
-Note: You also need to copy the ‘input’ folder with its contents and the 'Output' folder into the same directory where the .jar and the .bat files reside, as the application will look for these subfolders in its own directory.
+Note: You also need to copy the ‘input’ folder with its contents plus the 'Output' folder into the same directory where the .jar and the .bat files reside, as the application will look for these subfolders in its own directory.
 The final output file name will be assembled according to the type, number, and order of formats applied to the contents of the original input file.
 
 At the end of each process upon producing a new output file, the application will then provide the user with the same option as the start of the application to:
-<<<<<<< HEAD
+
   1- Continue by pressing the 'Enter' Button
   2-Terminate the application by inserting the word 'stop' and pressing the 'Enter' button.
 
 Please note that to run the project in an IDE the two folders 'input' and 'output' need to be added to the root as they have not been pushed to the 'Git' repository
-=======
 
   1- Continue by pressing the 'Enter' Button    
   2-Terminate the application by inserting the word 'stop' and pressing the 'Enter' button.
 
 Please note that to run the project in an IDE the two folders 'input' and 'output' need to be added to the root as they have not been pushed to the 'Git' repository
->>>>>>> origin/master
